@@ -1,0 +1,119 @@
+<html>
+ <head>
+ <! –Guilherme Roizentul e Igor Dinis Gaspar –>
+  <script type="application/javascript">
+    function draw() {
+      var canvas = document.getElementById("canvas");
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "rgb(0,128,128)";
+        ctx.fillRect (0, 0, 1320, 600);
+
+        ctx.fillStyle = "rgba(0, 128, 0, 1.0)";
+        ctx.fillRect (0, 500, 1320, 210);
+		
+		ctx.beginPath();
+        ctx.moveTo(0,504);
+        ctx.lineTo(1000,504);
+		ctx.strokeStyle = '#006600'; 
+		ctx.lineWidth = 7
+		ctx.stroke();
+		
+		ctx.beginPath();
+        ctx.moveTo(0,509);
+        ctx.lineTo(700,509);
+		ctx.strokeStyle = '#006600'; 
+		ctx.lineWidth = 7
+		ctx.stroke();
+		
+		ctx.beginPath();
+        ctx.moveTo(0,514);
+        ctx.lineTo(300,514);
+		ctx.strokeStyle = '#006600'; 
+		ctx.lineWidth = 7
+		ctx.stroke();
+		
+		ctx.fillStyle = "rgba(102, 51, 0, 1.0)";
+        ctx.fillRect (0, 600, 1320, 310);
+		
+		ctx.fillStyle = "rgba(199, 199, 199, 0.8)";
+		ctx.fillRect (600, 30, 500, 100);
+		
+		ctx.fillStyle = "rgba(222, 222, 222, 0.5)";
+		ctx.fillRect (670, 50, 400, 100);
+		
+		ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
+		ctx.fillRect (680, 10, 400, 100);
+		
+		ctx.fillStyle = "rgba(222, 222, 222, 0.5)";
+		ctx.fillRect (30, 10, 130, 100);
+		
+		ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
+		ctx.fillRect (50, 40, 160, 100);
+		
+		ctx.fillStyle = "rgb(255, 255, 0)";
+        ctx.fillRect (1195, 0, 100, 100);
+		ctx.globalAlpha = 0.7;
+		
+		ctx.beginPath();
+        ctx.moveTo(400,50);
+        ctx.lineTo(100,500);
+        ctx.lineTo(600,500);
+		ctx.fillStyle = "#5F5F5F";
+        ctx.fill();
+		
+		ctx.beginPath();
+		ctx.moveTo(400,50);
+		ctx.lineTo(300,500);
+		ctx.lineTo(600,500);
+		ctx.fill();
+        ctx.fillStyle = "#AFADAD";
+        ctx.fill();	
+		
+		ctx.beginPath();
+		ctx.moveTo(511,300);
+		ctx.lineTo(400,500);
+		ctx.lineTo(600,500);
+		ctx.fill();
+        ctx.fillStyle = "#726F6F";
+        ctx.fill();	
+
+    	ctx.beginPath();
+		ctx.moveTo(800,200);
+        ctx.lineTo(700,500);
+        ctx.lineTo(900,500);
+		ctx.fillStyle = "#949292";
+        ctx.fill();
+		
+		ctx.beginPath();
+		ctx.moveTo(800,200);
+        ctx.lineTo(900,500);
+        ctx.lineTo(1000,500);
+		ctx.fillStyle = "#AFADAD";
+        ctx.fill();
+		
+		ctx.beginPath();
+		ctx.moveTo(800,200);
+        ctx.lineTo(700,500);
+        ctx.lineTo(800,500);
+		ctx.fillStyle = "#404040";
+        ctx.fill();
+		
+		ctx.shadowOffsetX = 2;
+        ctx.shadowOffsetY = 2;
+        ctx.shadowBlur = 2;
+        ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
+
+        ctx.font = '30px Times New Roman';
+        ctx.fillStyle = 'Black';
+		ctx.textBaseline = 'hanging';
+        ctx.fillText('A brisa leve das montanhas', 520, 600);
+      }
+    }
+  </script>
+ </head>
+ <body onload="draw();">
+   <canvas id="canvas" width="1400" height="670"></canvas>
+ </body>
+</html>
