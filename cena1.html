@@ -1,0 +1,84 @@
+<html>
+ <head>
+ <! –Guilherme Roizentul e Igor Dinis Gaspar –>
+  <script type="application/javascript">
+    function draw() {
+      var canvas = document.getElementById("canvas");
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "rgb(0,128,128)";
+        ctx.fillRect (0, 0, 1320, 600);
+
+        ctx.fillStyle = "rgba(0, 128, 0, 1.0)";
+        ctx.fillRect (0, 500, 1320, 210);
+        
+        ctx.fillStyle = "rgba(102, 51, 0, 1.0)";
+        ctx.fillRect (0, 600, 1320, 310);
+        
+        ctx.fillStyle = "rgba(199, 199, 199, 1.0)";
+        ctx.fillRect (800, 30, 1000, 100);
+        
+        ctx.fillStyle = "rgba(222, 222, 222, 1.0)";
+        ctx.fillRect (870, 50, 900, 100);
+        
+        ctx.fillStyle = "rgba(255, 255, 255, 1.0)";
+        ctx.fillRect (880, 10, 1000, 100);
+        
+        ctx.fillStyle = "rgba(222, 222, 222, 1.0)";
+        ctx.fillRect (30, 10, 130, 100);
+        
+        ctx.fillStyle = "rgba(255, 255, 255, 1.0)";
+        ctx.fillRect (50, 40, 160, 100);
+        
+        ctx.beginPath();
+        ctx.moveTo(400,50);
+        ctx.lineTo(100,500);
+        ctx.lineTo(600,500);
+        ctx.fillStyle = "#5F5F5F";
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.moveTo(400,50);
+        ctx.lineTo(300,500);
+        ctx.lineTo(600,500);
+        ctx.fill();
+        ctx.fillStyle = "#AFADAD";
+        ctx.fill();    
+        
+        ctx.beginPath();
+        ctx.moveTo(511,300);
+        ctx.lineTo(400,500);
+        ctx.lineTo(600,500);
+        ctx.fill();
+        ctx.fillStyle = "#726F6F";
+        ctx.fill();    
+
+        ctx.beginPath();
+        ctx.moveTo(800,200);
+        ctx.lineTo(700,500);
+        ctx.lineTo(900,500);
+        ctx.fillStyle = "#949292";
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.moveTo(800,200);
+        ctx.lineTo(900,500);
+        ctx.lineTo(1000,500);
+        ctx.fillStyle = "#AFADAD";
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.moveTo(800,200);
+        ctx.lineTo(700,500);
+        ctx.lineTo(800,500);
+        ctx.fillStyle = "#404040";
+        ctx.fill();
+      }
+    }
+  </script>
+ </head>
+ <body onload="draw();">
+   <canvas id="canvas" width="1400" height="670"></canvas>
+ </body>
+</html>
